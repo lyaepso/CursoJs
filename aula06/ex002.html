@@ -9,7 +9,7 @@
         body {
             background-color: rgb(136, 214, 238);
             color: white;
-            font: normal; 20pt arial;
+            font: normal; 20pt arial; /* Comentário em CSS*/
         }
 
         h1 {
@@ -19,12 +19,11 @@
 
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
+    <h1>Olá, mundo!</h1> <!--Isso é um comentário no HTML-->
     <p>Me livrei da maldição!!</p>
     <script>
-        window.alert ("Minha primeira mensagem!")
-        window.confirm ("Está gostando de JS?")
-        window.prompt ("Qual é seu nome?")
+        var nome = window.prompt("Qual é seu nome?") // Variável nome recebe o resultado do prompt que vai aparecer na janela
+        window.alert('É um grande prazer em te conhecer, ' +nome+ '!') // O sinal de + serve pra concatenar, juntar
 
     </script>
 </body>
