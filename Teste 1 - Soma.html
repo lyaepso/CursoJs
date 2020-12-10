@@ -11,11 +11,15 @@
             background-color: rgb(221, 237, 243);
             font: normal;
             color: black;
+            text-align: center;
+
         }
 
-        div {
-            border width: 50px;
-            border color: black;
+        div,h1 {
+            border-width: 5px;
+            border-color: rgb(15, 28, 219);
+            border-style: solid;
+            border-radius: 30px;
 
         }
         
@@ -34,18 +38,26 @@
         <br>
         <input type="number" id="valor2">
         <br><br>
-        <button type="submit">Calcular</button>
+        <button type = "button" id="calcular">Calcular</button>
     </form>
-
+    <br>
     <div>
         <p>A soma dos dois números é:</p>
         <p id="soma"></p>
    </div>
  
     <script>
-        var soma = 2 + 2;
-        document.getElementById('soma').innerHTML = soma;
+        document.getElementById("calcular").addEventListener('click',efetuarsoma)
+        function efetuarsoma(){
+            var soma; 
+            var valor1;
+            var valor2;
+            valor1 = parseFloat(document.getElementById('valor1').value);
+            valor2 = parseFloat(document.getElementById('valor2').value);
+            soma = valor1 + valor2;
+            document.getElementById('soma').innerHTML=soma;
+        }
+  
     </script>
 </body>
-
 </html>
