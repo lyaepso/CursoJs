@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de 2 Números</title>
+
+    <style>
+        body {
+            background-color: rgb(221, 237, 243);
+            font: normal;
+            color: black;
+        }
+
+        div {
+            border width: 50px;
+            border color: black;
+
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <h1>Soma de 2 Números com Javascript</h1>
+    <form>
+        <label for="valor1">Digite um número:</label>
+        <br>
+        <input type="number" id="valor1">
+        <br><br>
+        <label for="valor2">Digite outro número: </label>
+        <br>
+        <input type="number" id="valor2">
+        <br><br>
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div>
+        <p>A soma dos dois números é:</p>
+        <p id="soma"></p>
+   </div>
+ 
+    <script>
+        var soma = 2 + 2;
+        document.getElementById('soma').innerHTML = soma;
+    </script>
+</body>
+
+</html>
