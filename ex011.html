@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    
+    <style>
+        body {
+           background-color: rgb(136, 214, 238);
+           color:(20, 32, 43);
+           font: normal 20pt arial;/* Comentário em CSS*/
+           text-align: center;
+       }
+       h1 {
+           color: rgb(20, 32, 43);
+           border: 5px solid rgb(20, 32, 43);
+           border-radius: 30px;
+           text-align: center;
+           padding: 10px;
+       }
+       p {
+           padding: 20px;
+       }
+       footer{
+           position: absolute;
+           bottom: 0;
+           left: 35%;
+       }
+   </style>
+
+
+</head>
+<body>
+    <h1>Verificando a nacionalidade</h1>
+    Onde você mora? <input name="local" id="local"> 
+    <input type="button" value="Verificar" onclick="Calcular()">
+    <div id=resultado></div>
+    
+    
+    <script>
+        function Calcular() {
+           var local=document.getElementById('local') 
+           var resultado=document.getElementById('resultado')
+           var nac=name(local.value) 
+           if (nac == Brasil){
+           resultado.innerHTML = '<p>Você está em território brasileiro!</p>'
+        }
+        else {
+           resultado.innerHTML = '<p>Você está em território estrangeiro!</p>'
+        }   
+    }   
+    </script>
+    <footer>Desenvolvido por Eliane Oliveira</footer>
+    
+</body>
+</html>
